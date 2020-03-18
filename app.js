@@ -8,7 +8,6 @@ $(document).ready(function() {
 
     $(".card").click(function() {
         console.log(this);
-        // option one fancy.
         $(this).attr("style", "border: solid 3.5px greenyellow;");
     });
 
