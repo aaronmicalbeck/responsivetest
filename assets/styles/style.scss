@@ -64,33 +64,27 @@ header{
 
 }
 
-#cardText{
+.cardText{
     font-size: 40px;
     margin-left: 20px;;
 }
 
-#cardNumber{
+.cardNumber{
     font-size: 100px;
 }
 
-#hero{
-    height: 100vh;
-}
+
 
 /* The hero image */
-#heroImage {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/city_skyline.jpg");
-  
-    /* Set a specific height */
-    height: 50%;
-    // width: 100%;
-  
+#hero {
+    background-image: url("../images/hero_image.jpg");
+
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    height: 100vh;
   }
   
   /* Place text in the middle of the image */
@@ -150,18 +144,15 @@ footer{
         top: 37%;
     }
 
+    .cardText{
+        font-size: 30px;
+    }
+
     .card{
         height: 18rem;
+        width: 17rem;
     }
 
-    #heroImage{
-
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-
-    }
     }
     
     /* ----------------------------------- */
