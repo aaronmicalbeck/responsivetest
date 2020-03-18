@@ -5,7 +5,6 @@ console.log(':)');
 
 $(document).ready(function() {
     console.log( "jQuery -- ready!" );
-    // code goes here.
 
     $(".card").click(function() {
         console.log(this);
