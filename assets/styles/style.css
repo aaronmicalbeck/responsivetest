@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Bhai+2|Bitter&display=swap");
 body, html {
   height: 100%;
+  width: 100%;
   margin: 0;
   font-family: 'Bitter', serif;
 }
@@ -46,7 +47,6 @@ header {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  width: 5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -83,11 +83,15 @@ header {
   font-size: 100px;
 }
 
+#hero {
+  height: 100vh;
+}
+
 /* The hero image */
 #heroImage {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("photographer.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/city_skyline.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/city_skyline.jpg");
   /* Set a specific height */
   height: 50%;
   /* Position and center the image to scale nicely on all screens */
@@ -111,7 +115,7 @@ header {
 }
 
 footer {
-  background: lightblue;
+  background: grey;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -125,5 +129,38 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 15px;
 }
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------ Media Query Start ------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------- */
+/* ---------------------------- */
+/* ----- Tablets Portrait ----- */
+/* ---------------------------- */
+/* ----------------------------- */
+/* ----- Tablets Landscape ----- */
+/* ----------------------------- */
+/* ---------------------------------- */
+/* ----- Mobile Phones Portrait ----- */
+/* ---------------------------------- */
+@media only screen and (min-width: 320px) and (max-width: 800px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  #heroText {
+    font-size: 60px;
+    top: 37%;
+  }
+  .card {
+    height: 18rem;
+  }
+  #heroImage {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+/* ----------------------------------- */
+/* ----- Mobile Phones Landscape ----- */
+/* ----------------------------------- */
 /*# sourceMappingURL=style.css.map */
