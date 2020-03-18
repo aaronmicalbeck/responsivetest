@@ -6,6 +6,8 @@ console.log(':)');
 $(document).ready(function() {
     console.log( "jQuery -- ready!" );
 
+// ON CLICK, Card class border style is changed
+
     $(".card").click(function() {
         console.log(this);
         $(this).attr("style", "border: solid 3.5px greenyellow;");
