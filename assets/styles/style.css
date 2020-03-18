@@ -74,6 +74,10 @@ header {
   display: flex;
 }
 
+.card:hover {
+  cursor: pointer;
+}
+
 .cardText {
   font-size: 40px;
   margin-left: 20px;
@@ -139,7 +143,8 @@ footer {
 /* ---------------------------------- */
 @media only screen and (min-width: 320px) and (max-width: 800px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   #heroText {
-    font-size: 60px;
+    margin-top: 70px;
+    font-size: 40px;
     top: 37%;
   }
   .cardText {
@@ -148,6 +153,9 @@ footer {
   .card {
     height: 18rem;
     width: 17rem;
+  }
+  #footerText {
+    padding: 0 0 0 0;
   }
 }
 
